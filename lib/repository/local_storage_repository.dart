@@ -25,10 +25,11 @@ class LocalStorageRepository {
     try {
       await _storage.delete(key: key);
     } catch (exception) {
-      Logger.root.onRecord.listen((record) {
-        print('${record.level.name}: ${record.time}: ${record.message}');
-      });
-      log.warning(exception);
+      // Logger.root.onRecord.listen((record) {
+      //   print('${record.level.name}: ${record.time}: ${record.message}');
+      // });
+      // log.warning(exception);
+      print(exception);
     }
   }
 }
