@@ -29,7 +29,7 @@ class LocalStorageRepository {
       //   print('${record.level.name}: ${record.time}: ${record.message}');
       // });
       // log.warning(exception);
-      print(exception);
+      print(exception);  
     }
   }
 }
